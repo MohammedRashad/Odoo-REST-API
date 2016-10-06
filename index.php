@@ -4,10 +4,10 @@ require_once('ripcord.php');
 require_once('Odoo.php');
 require_once('Customer.php');
 
-$url = 'http://meeko.no-ip.org:8069';
-$db = 'POC-DB';
-$username = 'a.reda@aurorasolutions.ca';
-$password = 'P@ssw0rd';
+$url = '';
+$db = '';
+$username = '';
+$password = '';
 
 $odoo = new Odoo($url, $db, $username, $password);
 $uid = $odoo->login();
