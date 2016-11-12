@@ -3,6 +3,7 @@
 require_once('ripcord.php');
 require_once('Odoo.php');
 require_once('Customer.php');
+require_once('Sales.php');
 
 $url = '';
 $db = '';
