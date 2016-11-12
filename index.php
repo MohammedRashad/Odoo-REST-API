@@ -5,19 +5,20 @@ require_once('Odoo.php');
 require_once('Customer.php');
 require_once('Sales.php');
 
-$url = '';
-$db = '';
-$username = '';
-$password = '';
+$url = 'http://meeko.no-ip.org:8069';
+$db = 'POC-DB';
+$username = 'a.reda@aurorasolutions.ca';
+$password = 'P@ssw0rd';
 
 $odoo = new Odoo($url, $db, $username, $password);
 $uid = $odoo->login();
+echo $uid;
 
 $order = new Sales($odoo);
 $user = new Customer($odoo);
 
 
-switch ($_POST['customer']) {
+ switch ($_GET['customer']) {
 
     case 'get':
 
@@ -43,12 +44,11 @@ switch ($_POST['customer']) {
 
         echo 'Error';
         break;
-    //
-}
+
+ }
 
 
-
-switch ($_POST['state']) {
+ switch ($_GET['state']) {
 
     case 'add':
 
@@ -64,5 +64,4 @@ switch ($_POST['state']) {
 
         echo 'Error';
         break;
-}
-
+ }
