@@ -18,6 +18,8 @@ class Customer {
         $this->odoo = $odoo;
     }
 
+
+
     function editCustomer() {
 
         $name = $_POST['name'];
@@ -42,6 +44,7 @@ class Customer {
 
         $models->execute_kw($this->odoo->db, $this->odoo->user_id, $this->odoo->password, 'res.partner', 'write', array(array($customer_id), array($key => $value)));
     }
+
 
     function getCustomer() {
 
@@ -97,9 +100,10 @@ class Customer {
 
     function listAll() {
 
+ 
         $models = ripcord::client($this->odoo->url . "/xmlrpc/2/object");
-
-        $client = $models->execute_kw($this->$odoo->db, $this->$odoo->user_id, $this->$odoo->password, 'res.partner', 'search_read', array(array(array('customer', '=', true))), array(
+ 
+        $client = $models->execute_kw($this->odoo->db, $this->odoo->user_id, $this->odoo->password, 'res.partner', 'search_read', array(array(array('customer', '=', true))), array(
             'limit' => 100,
             'fields' => array(
                 'birthdate',
@@ -110,6 +114,7 @@ class Customer {
                 'address',
                 'website',
         )));
+ echo "rdgrher";
 
         self::response($client);
     }
