@@ -114,8 +114,7 @@ class Customer {
                 'address',
                 'website',
         )));
- echo "rdgrher";
-
+ 
         self::response($client);
     }
 
