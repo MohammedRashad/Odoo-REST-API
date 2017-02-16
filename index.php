@@ -10,13 +10,15 @@ $db = '';
 $username = '';
 $password = '';
 
+//Doing Authenication of Odoo
 $odoo = new Odoo($url, $db, $username, $password);
 $uid = $odoo->login();
 echo $uid;
 
-$order = new Sales($odoo);
-$user = new Customer($odoo);
 
+//Comment the Sales section if working with Customers module and vice versa
+
+$user = new Customer($odoo);
 
  switch ($_GET['customer']) {
 
@@ -47,6 +49,9 @@ $user = new Customer($odoo);
 
  }
 
+//Sales module Section
+
+$order = new Sales($odoo);
 
  switch ($_GET['state']) {
 
