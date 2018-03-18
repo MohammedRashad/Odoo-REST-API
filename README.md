@@ -47,7 +47,7 @@ The API interfaces with odoo using RPC Calls performed by the ripcord library fo
 *The Sales Module example exhibits the ability to perform read and write operations for more complex modules like adding invoices and completing orders , more fields can be easily added to the code in the Customer.php, the main component of any function in the customer module is the "execute_kw" function that performs the RPC call*
 
 
-This API can be easily extended by refering to the documentation of odoo functions from the official website. 
+**This API can be easily extended by refering to the documentation of odoo functions from the official website.** 
   
 # License
 
