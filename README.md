@@ -3,6 +3,8 @@ RESTful Web Service for Interfacing with Odoo
 
 # Introduction 
 
+**Working on other version with python**
+
 Odoo is a suite of web based open source business apps.
 <br/>
 The main Odoo Apps include an Open Source CRM, Website Builder, eCommerce, Warehouse Management, Project Management, Billing & Accounting, Point of Sale, Human Resources, Marketing, Manufacturing, Purchase Management, ...
