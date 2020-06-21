@@ -3,7 +3,7 @@ RESTful Web Service for Interfacing with Odoo
 
 # Introduction 
 
-**Working on other version with python**
+**Working on other version with python -- odoo 13**
 
 Odoo is a suite of web based open source business apps.
 <br/>
